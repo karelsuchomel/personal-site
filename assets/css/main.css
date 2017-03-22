@@ -1,11 +1,7 @@
 /*
-Theme Name: [project name]
+Project Name: My own personal website
 Author: Karel Suchomel
-Description: [decription]
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: [for WordPress child themes]
+Description: To show others what am I up to :)
 */
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -69,7 +65,8 @@ figure {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE. */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -271,7 +268,8 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers. */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -305,7 +303,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-. */
 [type="checkbox"], [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -373,14 +372,160 @@ template, [hidden] {
  * ========================================================================== */
 /**
  * Add the correct display in IE 10-. */
+h1, h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
 .clear-both:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.page-content {
-  max-width: 1180px;
+section {
+  max-width: 980px;
   margin: 0 auto;
   padding: 0px 30px;
+  font-family: "Cabin", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.picture-container {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+}
+
+.example-01 {
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+.example-01 .quattuor-image {
+  float: left;
+  width: 50%;
+  height: 50%;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  background-image: url("../img/her.jpg");
+  background-position: left top;
+}
+.example-01 .quattuor-image:nth-of-type(2) {
+  background-position: right top;
+}
+.example-01 .quattuor-image:nth-of-type(3) {
+  background-position: left bottom;
+}
+.example-01 .quattuor-image:nth-of-type(4) {
+  background-position: right bottom;
+}
+.example-01:hover .quattuor-image {
+  -webkit-transform: rotateY(180deg) rotateX(180deg);
+          transform: rotateY(180deg) rotateX(180deg);
+}
+.example-01:hover .quattuor-image:nth-of-type(2) {
+  -webkit-transform: rotateY(-180deg) rotateX(180deg);
+          transform: rotateY(-180deg) rotateX(180deg);
+}
+.example-01:hover .quattuor-image:nth-of-type(3) {
+  -webkit-transform: rotateY(-180deg) rotateX(180deg);
+          transform: rotateY(-180deg) rotateX(180deg);
+}
+
+.example-02 {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.example-02 .quattuor-image {
+  float: left;
+  width: 50%;
+  height: 50%;
+  -webkit-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+          transform-origin: right bottom;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  background-image: url("../img/her.jpg");
+  background-position: left top;
+}
+.example-02 .quattuor-image:nth-of-type(2) {
+  visibility: hidden;
+  background-position: right top;
+  -webkit-transform-origin: right top;
+      -ms-transform-origin: right top;
+          transform-origin: right top;
+}
+.example-02 .quattuor-image:nth-of-type(3) {
+  background-position: left bottom;
+  -webkit-transform-origin: right top;
+      -ms-transform-origin: right top;
+          transform-origin: right top;
+}
+.example-02 .quattuor-image:nth-of-type(4) {
+  background-position: right bottom;
+  -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+          transform-origin: left top;
+}
+.example-02:hover .quattuor-image {
+  -webkit-transform: rotateX(45deg) rotateZ(45deg);
+          transform: rotateX(45deg) rotateZ(45deg);
+}
+.example-02:hover .quattuor-image:nth-of-type(3) {
+  -webkit-transform: rotateX(-45deg) rotateY(-45deg);
+          transform: rotateX(-45deg) rotateY(-45deg);
+}
+.example-02:hover .quattuor-image:nth-of-type(4) {
+  -webkit-transform: rotateX(-45deg) rotateY(45deg);
+          transform: rotateX(-45deg) rotateY(45deg);
+}
+
+.example-03 {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+.example-03 .quattuor-image {
+  float: left;
+  width: 50%;
+  height: 50%;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-image: url("../img/her.jpg");
+  background-position: left top;
+}
+.example-03 .quattuor-image:nth-of-type(2) {
+  background-position: right top;
+}
+.example-03 .quattuor-image:nth-of-type(3) {
+  background-position: left bottom;
+}
+.example-03 .quattuor-image:nth-of-type(4) {
+  background-position: right bottom;
+}
+.example-03:hover .quattuor-image {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.example-03:hover .quattuor-image:nth-of-type(2) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+.example-03:hover .quattuor-image:nth-of-type(3) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.example-03:hover .quattuor-image:nth-of-type(4) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }

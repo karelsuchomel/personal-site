@@ -1,4 +1,119 @@
-.page-content
+.heading
+
+section
 	max-width: $content-max-width
 	margin: 0 auto
 	padding: 0px $universal-padding
+	font-family: $basic-font
+
+h1
+	font-size: 48px
+
+.picture-container
+	width: 500px
+	height: 500px
+	margin: 50px auto
+
+.example-01
+	perspective: 500px
+	.quattuor-image
+		float: left
+		width: 50%
+		height: 50%
+		transform-origin: center
+		transition: 1s ease-in-out
+		background:
+			image: url('../img/her.jpg')
+			position: left top
+
+		&:nth-of-type(2)
+			background-position: right top
+
+		&:nth-of-type(3)
+			background-position: left bottom
+
+		&:nth-of-type(4)
+			background-position: right bottom
+
+	&:hover
+		.quattuor-image
+			transform: rotateY(180deg) rotateX(180deg)
+
+			&:nth-of-type(2)
+				transform: rotateY(-180deg) rotateX(180deg)
+
+			&:nth-of-type(3)
+				transform: rotateY(-180deg) rotateX(180deg)
+
+.example-02
+	//perspective: 500px
+	transform-style: preserve-3d
+	.quattuor-image
+		float: left
+		width: 50%
+		height: 50%
+		transform-origin: right bottom
+		transition: 1s ease-in-out
+		background:
+			image: url('../img/her.jpg')
+			position: left top
+
+		&:nth-of-type(2)
+			visibility: hidden
+			background-position: right top
+			transform-origin: right top
+
+		&:nth-of-type(3)
+			background-position: left bottom
+			transform-origin: right top
+
+		&:nth-of-type(4)
+			background-position: right bottom
+			transform-origin: left top
+
+	&:hover
+		.quattuor-image
+			transform: rotateX(45deg) rotateZ(45deg)
+
+			&:nth-of-type(3)
+				transform: rotateX(-45deg) rotateY(-45deg)
+
+			&:nth-of-type(4)
+				transform: rotateX(-45deg) rotateY(45deg)
+				
+
+.example-03
+	transform-style: preserve-3d
+	perspective: 500px
+	.quattuor-image
+		float: left
+		width: 50%
+		height: 50%
+		transform-origin: center
+		transition: 0.3s ease-in-out
+		//backface-visibility: hidden
+		background:
+			image: url('../img/her.jpg')
+			position: left top
+
+		&:nth-of-type(2)
+			background-position: right top
+
+		&:nth-of-type(3)
+			background-position: left bottom
+
+		&:nth-of-type(4)
+			background-position: right bottom
+
+	&:hover
+		.quattuor-image
+			transform: rotateY(180deg)
+
+			&:nth-of-type(2)
+				transition-delay: 0.2s
+
+			&:nth-of-type(3)
+				transition-delay: 0.3s
+
+			&:nth-of-type(4)
+				transition-delay: 0.1s
