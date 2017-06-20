@@ -383,6 +383,10 @@ h1, h2 {
   clear: both;
 }
 
+button:focus {
+  outline: none;
+}
+
 section {
   max-width: 980px;
   margin: 0 auto;
@@ -395,9 +399,10 @@ h1 {
 }
 
 .picture-container {
-  width: 500px;
-  height: 500px;
-  margin: 50px auto;
+  width: 250px;
+  height: 250px;
+  margin-left: 50px;
+  float: left;
 }
 
 .example-01 {
@@ -411,10 +416,13 @@ h1 {
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
           transform-origin: center;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   background-image: url("../img/her.jpg");
   background-position: left top;
+  background-size: 250px 250px;
 }
 .example-01 .quattuor-image:nth-of-type(2) {
   background-position: right top;
@@ -449,10 +457,11 @@ h1 {
   -webkit-transform-origin: right bottom;
       -ms-transform-origin: right bottom;
           transform-origin: right bottom;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   background-image: url("../img/her.jpg");
   background-position: left top;
+  background-size: 250px 250px;
 }
 .example-02 .quattuor-image:nth-of-type(2) {
   visibility: hidden;
@@ -499,10 +508,13 @@ h1 {
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
           transform-origin: center;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   background-image: url("../img/her.jpg");
   background-position: left top;
+  background-size: 250px 250px;
 }
 .example-03 .quattuor-image:nth-of-type(2) {
   background-position: right top;
@@ -528,4 +540,153 @@ h1 {
 .example-03:hover .quattuor-image:nth-of-type(4) {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
+}
+
+.button-3d {
+  margin: 50px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 15px 25px;
+  border: 0px;
+  background: -webkit-linear-gradient(45deg, #e96443, #904e95);
+  background: linear-gradient(45deg, #e96443, #904e95);
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.button-3d .button-text {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #B85870;
+}
+.button-3d .button-background {
+  position: absolute;
+  z-index: 0;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  overflow: hidden;
+  width: -webkit-calc(100% - 4px);
+  width: calc(100% - 4px);
+  height: -webkit-calc(100% - 4px);
+  height: calc(100% - 4px);
+  top: 2px;
+  left: 2px;
+}
+.button-3d .button-background .btn-bg-sheet {
+  background: white;
+  height: 100%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.button-3d:hover .button-text, .button-3d:active .button-text {
+  color: white;
+}
+.button-3d:hover .button-background .btn-bg-sheet, .button-3d:active .button-background .btn-bg-sheet {
+  -webkit-transform: rotate(10deg) scaleY(0) scaleX(1.5);
+      -ms-transform: rotate(10deg) scaleY(0) scaleX(1.5);
+          transform: rotate(10deg) scaleY(0) scaleX(1.5);
+}
+.button-3d:active {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.button-modern {
+  margin: 50px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 15px 25px;
+  border: 0px;
+  background: -webkit-linear-gradient(45deg, #e96443, #904e95);
+  background: linear-gradient(45deg, #e96443, #904e95);
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.button-modern .button-text {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #B85870;
+}
+.button-modern .button-background {
+  position: absolute;
+  z-index: 0;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  overflow: hidden;
+  width: -webkit-calc(100% - 4px);
+  width: calc(100% - 4px);
+  height: -webkit-calc(100% - 4px);
+  height: calc(100% - 4px);
+  top: 2px;
+  left: 2px;
+}
+.button-modern .button-background .btn-bg-sheet {
+  background: white;
+  height: 50%;
+  -webkit-transform-origin: center bottom;
+      -ms-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transform: rotate(-5deg) scaleX(2) scaleY(2) translateY(1px);
+      -ms-transform: rotate(-5deg) scaleX(2) scaleY(2) translateY(1px);
+          transform: rotate(-5deg) scaleX(2) scaleY(2) translateY(1px);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+.button-modern .button-background .btn-bg-sheet:nth-of-type(2) {
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: rotate(-5deg) scaleX(2) scaleY(2) translateY(0px);
+      -ms-transform: rotate(-5deg) scaleX(2) scaleY(2) translateY(0px);
+          transform: rotate(-5deg) scaleX(2) scaleY(2) translateY(0px);
+}
+
+.button-modern:hover .button-text, .button-modern:active .button-text {
+  color: white;
+}
+.button-modern:hover .button-background .btn-bg-sheet:nth-of-type(1), .button-modern:active .button-background .btn-bg-sheet:nth-of-type(1) {
+  -webkit-transform: rotate(-20deg) scaleX(2) scaleY(2) translateY(-100%);
+      -ms-transform: rotate(-20deg) scaleX(2) scaleY(2) translateY(-100%);
+          transform: rotate(-20deg) scaleX(2) scaleY(2) translateY(-100%);
+}
+.button-modern:hover .button-background .btn-bg-sheet:nth-of-type(2), .button-modern:active .button-background .btn-bg-sheet:nth-of-type(2) {
+  -webkit-transform: rotate(-20deg) scaleX(2) scaleY(2) translateY(100%);
+      -ms-transform: rotate(-20deg) scaleX(2) scaleY(2) translateY(100%);
+          transform: rotate(-20deg) scaleX(2) scaleY(2) translateY(100%);
+}
+.button-modern:active {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+          transform: scale(0.98);
+}
+.button-modern:focus {
+  outline: none !important;
+}
+.button-modern::-moz-focus-inner {
+  border: 0px;
 }
