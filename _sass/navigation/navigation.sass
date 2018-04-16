@@ -1,0 +1,102 @@
+@import '../_partials'
+
+.link-background-reaction
+	&:hover, &:focus
+		background: #e3e2e1
+
+	&:active
+		background: #d3d2d1
+
+#main-navigation
+	position: relative
+	padding: 0
+	margin-bottom: 12px
+	&:after
+		content: ""
+		display: block
+		clear: both
+
+	.front-page-link
+		display: block
+		width: 32px
+		height: 32px
+		float: left
+		background:
+			image: url('../images/icon.png')
+			size: 16px
+			repeat: no-repeat
+			position: 0% 50%
+
+
+	.navigation-link
+		display: block
+		float: right
+		font-size: 14px
+		padding: 8px 6px
+		margin-left: 6px
+		font-weight: 500
+		background: transparent
+		text-decoration: none
+		color: black
+		@extend .link-background-reaction
+		@extend .noselect
+
+	label.mobile-navigation-toggle
+		cursor: pointer
+		@extend .navigation-link
+
+	input#mobile-navigation-trigger
+		display: none
+
+		&:checked + #navigation-content-wrapper
+			display: block
+
+	#navigation-content-wrapper
+		display: none
+		position: absolute
+		top: 37px
+		right: 0px
+
+		ul
+			position: relative
+			z-index: 11
+			padding: 12px 0px
+			margin: 0px
+			list-style: none
+			background-color: white
+			animation: slideUpFromInvisible 0.25s
+
+			// The menu "bubble tip"
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				top: -5px
+				right: 27px
+				width: 10px
+				height: 10px
+				background: white
+				transform: rotate(45deg)
+
+			li
+				margin: 0px
+				a
+					display: block
+					text-decoration: none
+					color: black
+					font-size: 14px
+					font-weight: 500
+					padding: 8px 72px 8px 12px
+					margin-bottom: 4px
+					background-color: white
+					@extend .link-background-reaction
+
+		.navigation-background-toggle
+			position: fixed
+			z-index: 10
+			top: 32px
+			left: 0
+			bottom: 0
+			right: 0
+			background: rgba(0,0,0,0.33)
+			animation: justAppearFromThinAir 0.2s

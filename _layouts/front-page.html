@@ -1,0 +1,50 @@
+{% include head.html %}
+
+{% include navigation.html %}
+
+<!-- front card -->
+<div class="front-card-container">
+	<div class="front-card-content">
+		<em class="above">Hi, hello, the name is</em>
+		<h1>Karel<br><span>Suchomel</span></h1>
+		<em class="under">I am a web designer located in Brno, Czech Republic</em>
+	</div>
+</div>
+
+<p class="front-paragraph">
+	Who is working to create <a href="#">free/libre</a> tools for schools, students and teachers.
+	He thinks it's his destiny, elixir of life and the prophet's stone.
+</p>
+<hr>
+
+<h2>Projects I've done</h2>
+<p>
+	All of these are still living... check them out.
+</p>
+<hr>
+
+<h2>Contact me</h2>
+<p>
+	I am not present on any social network, but I am an active e-mailer.
+</p>
+
+<form action="https://formspree.io/karelsuchomel@windowslive.com" method="POST">
+	<input type="hidden" name="_next" value="http://karelsuchomel.cz/">
+	<input type="hidden" name="_format" value="plain" />
+	<input type="text" name="_gotcha" style="display:none">
+	<label>Your e-mail
+	<input id="input-sender-email" type="email" name="_replyto" required>
+	</label>
+	<label>Your name
+	<input type="text" name="jmeno" placeholder="" required>
+	</label>
+	<label>Message
+	<textarea name="text" required></textarea>
+	</label>
+	<input type="submit" value="Send message" class="submit-button">
+</form>
+<hr>
+
+
+
+{% include footer.html %}

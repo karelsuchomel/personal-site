@@ -1,5 +1,3 @@
-node_modules/
-development/node_modules/
-development/.sass-cache/
-development/.ftppass
-assets/css/style.css.map
+_site
+.sass-cache
+.jekyll-metadata

@@ -1,0 +1,15 @@
+<nav id="main-navigation">
+	<a href="index.html" class="front-page-link"></a>
+	<label for="mobile-navigation-trigger" class="mobile-navigation-toggle">More..</label>
+	<a href="#" class="navigation-link">Contact me</a>
+	<a href="#" class="navigation-link">Projects</a>
+	<input type="checkbox" id="mobile-navigation-trigger">
+	<div id="navigation-content-wrapper">
+		<ul>
+			{% for item in site.data.navigation.items %}
+			<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+			{% endfor %}
+		</ul>
+		<label for="mobile-navigation-trigger" class="navigation-background-toggle"></label>
+	</div>
+</nav>
