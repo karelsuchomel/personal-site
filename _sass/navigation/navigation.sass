@@ -18,8 +18,8 @@
 
 	.front-page-link
 		display: block
-		width: 32px
-		height: 32px
+		width: 36px
+		height: 36px
 		float: left
 		background:
 			image: url('../images/icon.png')
@@ -27,12 +27,15 @@
 			repeat: no-repeat
 			position: 0% 50%
 
+		&:hover, &:active
+			background-image: url('../images/icon-red.png')
+
 
 	.navigation-link
 		display: block
 		float: right
 		font-size: 14px
-		padding: 8px 6px
+		padding: 10px 8px
 		margin-left: 6px
 		font-weight: 500
 		background: transparent
@@ -54,7 +57,7 @@
 	#navigation-content-wrapper
 		display: none
 		position: absolute
-		top: 39px
+		top: 43px
 		right: 0px
 
 		ul
@@ -94,7 +97,7 @@
 		.navigation-background-toggle
 			position: fixed
 			z-index: 10
-			top: 32px
+			top: 36px
 			left: 0
 			bottom: 0
 			right: 0
