@@ -5,16 +5,20 @@ var activeSmallNavigation = false;
 function toggleContentScrollable() 
 {
 	if ( Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= 640 || activeSmallNavigation == true) {
+		let bodyElement = document.getElementsByTagName("BODY")[0];
+		let htmlElement = document.getElementsByTagName("HTML")[0];
 		if ( navigationExpanded == false ) {
-			let bodyElement = document.getElementsByTagName("BODY")[0];
 			bodyElement.style.height = "100vh";
 			bodyElement.style.overflowY = "hidden";
+			htmlElement.style.height = "100vh";
+			htmlElement.style.overflowY = "hidden";
 			navigationExpanded = true;
 			activeSmallNavigation = true;
 		} else {
-			let bodyElement = document.getElementsByTagName("BODY")[0];
 			bodyElement.style.height = "auto";
 			bodyElement.style.overflowY = "auto";
+			htmlElement.style.height = "auto";
+			htmlElement.style.overflowY = "auto";
 			navigationExpanded = false;
 			activeSmallNavigation = false;
 		}
