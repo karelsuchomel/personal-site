@@ -17,11 +17,29 @@
 </p>
 <hr>
 
-<h2>Projects I've done</h2>
-<p>
-	All of these are still living... check them out.
-</p>
+
+{%- if site.categories.projects.size > 0 -%}
+	<h2>Projects I've done</h2>
+	<p>
+		All of these are still living... check them out.
+	</p>
+	<ul class="front-page-list-projects">
+		{%- for post in site.categories.projects -%}
+		<li>
+			<div class="graphic-container">
+				<img src="{{ post.desktop-screenshot-name | relative_url }}" alt="desktop-screenshot">
+			</div>
+			<h3>
+				<a class="post-link" href="{{ post.url | relative_url }}">
+					{{ post.title | escape }}
+				</a>
+			</h3>
+		</li>
+		{%- endfor -%}
+	</ul>
 <hr>
+{%- endif -%}
+
 
 <h2>Contact me</h2>
 <p>
