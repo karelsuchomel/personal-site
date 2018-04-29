@@ -5,9 +5,9 @@ items:
   url: http://nastrojeproskoly.cz
 
 - title: My writings
-  url: blog.html
+  url: /category/writings.html
 
 - title: About me
-  url: about.html
+  url: /about.html
 
 

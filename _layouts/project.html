@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+{%- if page.special-color -%}
+<style>
+	.project-details h1 {
+		//color: #00b04b;
+	}
+</style>
+{%- endif -%}
+
+{%- if page.desktop-screenshot-name -%}
+<div class="project-visuals-container">
+	<div class="desktop-visuals-container" style="display: none;">
+		<img src="/assets/files/{{ page.desktop-screenshot-name }}" alt="desktop-screenshot">
+	</div>
+	<div class="mobile-visuals-container">
+		<img src="/assets/files/{{ page.mobile-screenshot-name }}" alt="mobile-screenshot">
+	</div>
+</div>
+{%- endif -%}
+
+<div class="project-details">
+	<h1>{{ page.title }}</h1>
+
+	{%- if page.site-url -%}
+	<div class="detail-listing-container">
+		<span class="job-type">Site URL:</span><a href="{{ page.site-url }}" target="_blank">{{ page.site-url }}</a>
+	</div>
+	{%- endif -%}
+
+	{%- if page.programming -%}
+	<div class="detail-listing-container">
+		<span class="job-type">Programming:</span>
+		{%- for item in page.programming -%}
+			<div class="job-item">{{ item }}</div>
+		{%- endfor -%}
+	</div>
+	{%- endif -%}
+
+	{%- if page.design -%}
+	<div class="detail-listing-container">
+		<span class="job-type">Design:</span>
+		{%- for item in page.design -%}
+			<div class="job-item">{{ item }}</div>
+		{%- endfor -%}
+	</div>
+	{%- endif -%}
+
+	{%- if page.graphics -%}
+	<div class="detail-listing-container">
+		<span class="job-type">Graphics:</span>
+		{%- for item in page.graphics -%}
+			<div class="job-item">{{ item }}</div>
+		{%- endfor -%}
+	</div>
+	{%- endif -%}
+
+	{%- if page.other -%}
+	<div class="detail-listing-container">
+		<span class="job-type">Other:</span>
+		{%- for item in page.other -%}
+			<div class="job-item">{{ item }}</div>
+		{%- endfor -%}
+	</div>
+	{%- endif -%}
+	<hr>
+</div>
+
+<div class="project-description">
+	{{ page.content }}
+</div>

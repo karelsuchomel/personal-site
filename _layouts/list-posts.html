@@ -1,0 +1,24 @@
+{% include head.html %}
+
+{% include navigation.html %}
+
+<!-- list projects i've done -->
+{%- if site.categories[page.categories].size > 0 -%}
+	<h2 class="post-list-heading">{{ page.categories | default: "Posts" }}</h2>
+	<ul class="post-list">
+		{%- for post in site.categories[page.categories] -%}
+		<li>
+			<span class="post-meta">{{ post.date | date: date_format }}</span>
+			<h3>
+				<a class="post-link" href="{{ post.url | relative_url }}">
+					{{ post.title | escape }}
+				</a>
+			</h3>
+		</li>
+		{%- endfor -%}
+	</ul>
+{%- else -%}
+	<h2 class="post-list-heading">No {{ page.categories | default: "posts" }} here</h2>
+{%- endif -%}
+
+{% include footer.html %}

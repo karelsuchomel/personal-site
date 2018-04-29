@@ -21,12 +21,11 @@ function toggleContentScrollable()
 			htmlElement.style.overflowY = "auto";
 			navigationExpanded = false;
 			activeSmallNavigation = false;
+			setTimeout(function(){ document.getElementById("mobile-navigation-trigger").checked = false; }, 32);
 		}
 	} else if ( navigationExpanded == false ) {
 		navigationExpanded = true;
-		console.log("wieport is more than 640px");
 		window.addEventListener("scroll", function() {
-			console.log("closeNavigationWhenScrolled - fired up");
 			document.getElementById("mobile-navigation-trigger").checked = false;
 			this.removeEventListener("scroll", arguments.callee);
 			navigationExpanded = false;
