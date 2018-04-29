@@ -13,10 +13,10 @@ layout: default
 {%- if page.desktop-screenshot-name -%}
 <div class="project-visuals-container">
 	<div class="desktop-visuals-container" style="display: none;">
-		<img src="/assets/files/{{ page.desktop-screenshot-name }}" alt="desktop-screenshot">
+		<img src="{{ "page.desktop-screenshot-name" | relative_url }}" alt="desktop-screenshot">
 	</div>
 	<div class="mobile-visuals-container">
-		<img src="/assets/files/{{ page.mobile-screenshot-name }}" alt="mobile-screenshot">
+		<img src="{{ "page.mobile-screenshot-name" | relative_url }}" alt="mobile-screenshot">
 	</div>
 </div>
 {%- endif -%}
