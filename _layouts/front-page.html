@@ -19,8 +19,8 @@
 
 {%- if site.categories.projects.size > 0 -%}
 	<h2>Projects I've done</h2>
-	<p>
-		All are live... check them out.
+	<p class="listing-projects-paragraph">
+		All are live... check them out. <a href="{{ "/category/projects.html" | relative_url }}">Show all...</a>
 	</p>
 	<ul class="front-page-list-projects">
 		{%- for post in site.categories.projects limit:3 -%}
@@ -47,7 +47,10 @@
 	<p>
 		Alternatively, if don't like forms, click this button to assemble my e-mail address.
 	</p>
-	<button type="button" class="standard-button">Assemble!</button>
+	<button id="assemble-address-trigger" type="button" class="standard-button">Assemble!</button>
+	<div id="address-container">
+		<span>ka</span><span>rel</span><span>su</span><span>cho</span><span>mel</span><span>@</span><span>win</span><span>dows</span><span>li</span><span>ve</span><span>.c</span><span>om</span>
+	</div>
 </div>
 
 <form id="front-end-form" action="https://formspree.io/karelsuchomel@windowslive.com" method="POST">
@@ -68,5 +71,8 @@
 <hr>
 
 </div>
+
+<!-- page specific scripts -->
+<script src="{{ "/assets/js/specific.js" | relative_url }}"></script>
 
 {% include footer.html %}

@@ -3,7 +3,7 @@
 	<label for="mobile-navigation-trigger" class="mobile-navigation-toggle menu-button-toggle">More..</label>
 	<a href="#" class="navigation-link">Contact me</a>
 	<a href="{{ "/category/projects.html" | relative_url }}" class="navigation-link">Projects</a>
-	<input type="checkbox" id="mobile-navigation-trigger">
+	<input type="checkbox" id="mobile-navigation-trigger" tabindex="-1">
 	<div id="navigation-content-wrapper">
 		<ul>
 			{% for item in site.data.navigation.items %}
