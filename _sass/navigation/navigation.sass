@@ -17,17 +17,29 @@
 
 	.front-page-link
 		display: block
-		width: 36px
-		height: 36px
 		float: left
-		background:
-			image: url('../images/icon.png')
-			size: 16px
-			repeat: no-repeat
-			position: 0% 50%
+		border-bottom: 3px solid black
+		padding: 8px 0px 2px
+		// font
+		font-family: 'Bitter', serif
+		font-size: 16px
+		font-weight: 700
+		text-decoration: none
+		color: black
+
+		> span
+			display: block
+			float: left
 
 		&:hover, &:active
-			background-image: url('../images/icon-red.png')
+			> span.hidden
+				max-width: 100px
+
+		> span.hidden
+			transition: max-width 0.3s
+			transition-delay: 1s
+			overflow: hidden
+			max-width: 0px
 
 
 	.navigation-link
