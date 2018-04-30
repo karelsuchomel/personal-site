@@ -12,7 +12,7 @@ ul.front-page-list-projects
 	> a
 		float: left
 		width: calc(50% - 6px)
-		margin: 0px 12px 12px 0px
+		margin: 0px
 		text-decoration: none
 		color: black
 
@@ -25,9 +25,7 @@ ul.front-page-list-projects
 			.graphic-container
 				width: 100%
 				box-sizing: border-box
-				height: 120px
 				overflow: hidden
-				margin-bottom: 12px
 				border: 1px solid #f3f2f1
 				img
 					max-width: 100%
@@ -53,11 +51,18 @@ ul.front-page-list-projects
 			clear: both
 
 		> a
-			width: calc(50% - 18px)
-			margin: 0px 36px 36px 0px
+			width: 33.333333333%
+			margin: 0px
 
-			&:nth-of-type(2n)
-				margin-right: 0px
+			> li 
+				padding-bottom: 100%
+				position: relative
+				height: 0px
 
-			> li .graphic-container
-				height: 300px
+				.graphic-container
+					position: absolute
+					top: 0
+					right: 0
+					bottom: 0
+					left: 0
+					height: auto
