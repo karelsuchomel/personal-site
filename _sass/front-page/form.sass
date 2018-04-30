@@ -1,4 +1,8 @@
-form
+.left-half
+	h2
+		margin-top: 0px
+
+form#front-end-form
 	margin: 24px 0px 12px
 
 	label
@@ -8,7 +12,7 @@ form
 		margin-bottom: 12px
 		display: block
 	input, textarea
-		font-size: 18px
+		font-size: 16px
 		color: #2D2836
 		display: block
 		position: relative
@@ -16,9 +20,8 @@ form
 		width: 100%
 		border: 0
 		border-bottom: 2px solid #BBB
-		padding: 12px 6px 9px
+		padding: 10px 6px 9px
 		font-size: 15px
-		background: transparent
 		margin: 2px 0px 0px
 		background-color: #e5e4e3
 
@@ -28,27 +31,37 @@ form
 		&:focus
 			border-bottom: 2px solid #e55039
 
-	input.submit-button
-		font-size: 16px
-		line-height: 24px
-		width: auto
-		display: inline-block
-		margin: 0 auto
-		padding: 12px 38px 12px 8px
-		font-size: 14px
-		font-weight: bold
-		color: #e55039
-		cursor: pointer
-		background:
-			color: #E7E6e5
-			image: url('../images/send-form-icon.png')
-			size: 20px
-			repeat: no-repeat
-			position: 94% 50%
-
-		&:active
-			margin-top: 2px
-			border-bottom: 0px
-
 	textarea
 		height: 96px
+
+button.submit-button
+	font-size: 14px
+	font-family: "Roboto", sans-serif
+	font-weight: 500
+	display: block
+	border: 0
+	border-bottom: 2px solid #BBB
+	padding: 8px 35px 7px 12px
+	margin: 2px 0px 0px
+	width: auto
+	display: inline-block
+	color: #e55039
+	background:
+		color: #e5e4e3
+		image: url('../images/send-form-icon.png')
+		size: 14px
+		repeat: no-repeat
+		position: 93% 50%
+
+@media screen and (min-width: 640px)
+	.left-half
+		box-sizing: border-box
+		float: left
+		width: 50%
+		padding-right: 20px
+
+	form#front-end-form
+		box-sizing: border-box
+		float: left
+		width: 50%
+		padding-left: 20px

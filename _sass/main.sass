@@ -15,14 +15,15 @@ h1, h2, h3, h4, h5, h6
 	margin: 24px 0px 6px
 	line-height: 1.2em
 h2
-	font-size: 22px
+	font-size: 20px
 	line-height: 28px
 
 hr
-	height: 2px
-	background-color: #BBB
-	margin: 12px 0px 24px
+	height: 1px
+	background-color: #DDD
+	margin: 24px 0px 36px
 	border: 0px
+	clear: both
 
 p
 	font-family: 'Roboto', sans-serif
@@ -32,3 +33,26 @@ p
 
 	a
 		@extend .standard-link
+
+button.standard-button
+	cursor: pointer
+	font-size: 14px
+	font-family: "Roboto", sans-serif
+	font-weight: 500
+	display: block
+	border: 0
+	border-bottom: 2px solid #BBB
+	padding: 8px 12px 7px
+	margin: 2px 0px 0px
+	background-color: #e5e4e3
+
+	&:hover
+		border-bottom: 2px solid #ED8778
+
+	&:focus
+		border-bottom: 2px solid #e55039
+
+	&:active
+		border-bottom: 0px
+		border-top: 2px solid #BBB
+		background-color: #e3e2e1

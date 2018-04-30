@@ -6,14 +6,13 @@
 <!-- front card -->
 <div class="front-card-container">
 	<div class="front-card-content">
-		<h1>Hi, hello! <span>My name is</span><br>Karel Suchomel</h1>
+		<h1>Hi! <span>My name is</span><br>Karel Suchomel</h1>
 		<span class="under">I am a web designer located in Brno, Czech Republic</span>
 	</div>
 </div>
 
 <p class="front-paragraph">
-	<span class="first-letter">W</span>orking to create free/libre <a href="http://nastrojeproskoly.cz" target="_blank">tools for schools</a>, students and teachers. Including website, management tools, tools for creating engaging materials as well as space to learn and test your knowladge.<br>
-	I am also down for any other meanigful projects you might come up with.
+	<span class="first-letter">W</span>orking to create free/libre <a href="http://nastrojeproskoly.cz" target="_blank">tools for schools</a>, students and teachers. Including website, management tools, tools for creating engaging materials as well as space to learn and test your knowladge.
 </p>
 <hr>
 
@@ -25,28 +24,33 @@
 	</p>
 	<ul class="front-page-list-projects">
 		{%- for post in site.categories.projects -%}
+		<a class="post-link" href="{{ post.url | relative_url }}">
 		<li>
 			<div class="graphic-container">
 				<img src="{{ post.desktop-screenshot-name | relative_url }}" alt="desktop-screenshot">
 			</div>
 			<h3>
-				<a class="post-link" href="{{ post.url | relative_url }}">
 					{{ post.title | escape }}
-				</a>
 			</h3>
 		</li>
+		</a>
 		{%- endfor -%}
 	</ul>
 <hr>
 {%- endif -%}
 
+<div class="left-half">
+	<h2>Contact me</h2>
+	<p>
+		I am not present on any social network, but I am an active e-mailer.
+	</p>
+	<p>
+		Alternatively, if don't like forms, click this button to assemble my e-mail address.
+	</p>
+	<button type="button" class="standard-button">Assemble!</button>
+</div>
 
-<h2>Contact me</h2>
-<p>
-	I am not present on any social network, but I am an active e-mailer.
-</p>
-
-<form action="https://formspree.io/karelsuchomel@windowslive.com" method="POST">
+<form id="front-end-form" action="https://formspree.io/karelsuchomel@windowslive.com" method="POST">
 	<input type="hidden" name="_next" value="http://karelsuchomel.cz/">
 	<input type="hidden" name="_format" value="plain" />
 	<input type="text" name="_gotcha" style="display:none">
@@ -59,7 +63,7 @@
 	<label>Message
 	<textarea name="text" required></textarea>
 	</label>
-	<input type="submit" value="Send message" class="submit-button">
+	<button type="submit" value="submit" class="standard-button submit-button">Send message</button>
 </form>
 <hr>
 
