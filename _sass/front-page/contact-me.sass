@@ -1,21 +1,33 @@
-.left-half
+.contact-me.left-half
 	h2
 		margin-top: 0px
 
 	#address-container
-		margin-bottom: 45px
+		margin: 12px 0px 55px
+		position: relative
+
+		span
+			color: #777
+			font-weight: 500
+			font-size: 16px
+			position: relative
+			display: inline-block
+			transition: transform 0.5s
 
 form#front-end-form
-	margin: 24px 0px 12px
+	margin: 0px 0px 12px
+
+	h2
+		margin-top: 0px
 
 	label
-		font-size: 14px
-		color: #666
+		font-size: 13px
+		font-weight: 500
+		color: #777
 		position: relative
 		margin-bottom: 12px
 		display: block
 	input, textarea
-		font-size: 16px
 		color: #2D2836
 		display: block
 		position: relative
@@ -23,10 +35,10 @@ form#front-end-form
 		width: 100%
 		border: 0
 		border-bottom: 2px solid #BBB
-		padding: 10px 6px 9px
+		padding: 7px 0px 3px
 		font-size: 15px
 		margin: 2px 0px 0px
-		background-color: #e5e4e3
+		background-color: #f7f6f5
 
 		&:hover
 			border-bottom: 2px solid #ED8778
@@ -35,7 +47,7 @@ form#front-end-form
 			border-bottom: 2px solid #e55039
 
 	textarea
-		height: 96px
+		height: 65px
 
 button.submit-button
 	font-size: 14px
@@ -57,7 +69,7 @@ button.submit-button
 		position: 93% 50%
 
 @media screen and (min-width: 640px)
-	.left-half
+	.contact-me.left-half
 		box-sizing: border-box
 		float: left
 		width: 50%

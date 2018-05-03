@@ -7,9 +7,10 @@
   /**
    * Selectors
    */
-	var triggerID = "assemble-address-trigger";
-	var containerID = "address-container";
-	let emailAddress = "karelsuchomel@" + "windowslive.com";
+	let triggerID = "assemble-address-trigger";
+	let containerID = "address-container";
+	const emailAddress = "karelsuchomel@" + "windowslive.com";
+	var piecesArr = [];
 
 
 	/**
@@ -23,23 +24,12 @@
 
 		if (dismantled == true) 
 		{
-
-			const piecesArr = dismantleAddress( address, contEl );
-
-			// after finishong bublle sort, wrap the content in functional mailto: link
-
-			// TODO this should be upto some triggerControlFuncion
-			// Change trigger button to "Dismantle!"
-			//dismantled = false;
+			assembleAddress(piecesArr, contEl);
+			trigEl.innerHTML = "CHAOS!";
+			dismantled = false;
 		} else {
-			const piecesArr = dismantleAddress( address, contEl );
-
+			piecesArr = dismantleAddress( address, contEl );
 			trigEl.innerHTML = "Assemble!";
-
-			trigEl.addEventListener('click', function() {
-				assembleAddress(piecesArr, contEl);
-			}, false );
-
 			dismantled = true;
 		}
 		
@@ -147,13 +137,21 @@
 			ArrLength = newn;
 		}
 
+		setTimeout(function() {
+			contEl.innerHTML = "<a href='mailto:" + emailAddress + "?subject=Contact from karelsuchomel.cz'>" + contEl.innerHTML + "</a>";
+		}, delayMultiplier * 20);
+
 		}, 500);
 	};
+
 
 	/**
    * Events/APIs/init
    */
-	triggerControl(emailAddress, "address-container", "assemble-address-trigger");
+	triggerControl(emailAddress, containerID, triggerID);
+	document.getElementById(triggerID).addEventListener('click', function() {
+		triggerControl(emailAddress, containerID, triggerID);
+	}, false);
 
 
 })(window, document);
