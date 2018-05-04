@@ -47,13 +47,7 @@ ul.front-page-list-projects
 			.graphic-container
 				height: auto
 				width: 100%
-				position: absolute
-				top: 0
-				right: 0
-				bottom: 0
-				left: 0
 				box-sizing: border-box
-				overflow: hidden
 				img
 					max-width: 100%
 					height: auto
@@ -78,4 +72,12 @@ ul.front-page-list-projects
 			clear: both
 
 		> a
-			width: 33.333333333%
+			width: calc(33.333333333% - 14px)
+			box-sizing: border-box
+			margin-right: 21px
+
+			&:nth-of-type(3)
+				margin-right: 0px
+
+			> li .graphic-container
+				margin-bottom: 20px
