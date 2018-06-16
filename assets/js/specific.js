@@ -12,7 +12,6 @@
 	const emailAddress = "karelsuchomel@" + "windowslive.com";
 	var piecesArr = [];
 
-
 	/**
    * Methods
    */
@@ -28,10 +27,10 @@
 
 			assembleAddress(piecesArr, contEl, function(){
 				document.getElementById(triggerID).addEventListener('click', triggerHandle, false);
+				trigEl.innerHTML = "CHAOS!";
+				dismantled = false;
 			});
 
-			trigEl.innerHTML = "CHAOS!";
-			dismantled = false;
 		} else {
 			piecesArr = dismantleAddress( address, contEl);
 			trigEl.innerHTML = "Assemble!";
@@ -144,7 +143,7 @@
 
 		setTimeout(function() {
 			contEl.innerHTML = "<a href='mailto:" + emailAddress + "?subject=Contact from karelsuchomel.cz'>" + contEl.innerHTML + "</a>";
-			return callback;
+			callback();
 		}, delayMultiplier * 20);
 
 		}, 500);

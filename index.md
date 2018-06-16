@@ -1,4 +1,4 @@
 ---
-title: Karel Suchomel - about me
+title: about me
 layout: front-page
 ---
