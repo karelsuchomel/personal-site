@@ -24,11 +24,16 @@
 
 		if (dismantled == true) 
 		{
-			assembleAddress(piecesArr, contEl);
+			document.getElementById(triggerID).removeEventListener('click', triggerHandle, false);
+
+			assembleAddress(piecesArr, contEl, function(){
+				document.getElementById(triggerID).addEventListener('click', triggerHandle, false);
+			});
+
 			trigEl.innerHTML = "CHAOS!";
 			dismantled = false;
 		} else {
-			piecesArr = dismantleAddress( address, contEl );
+			piecesArr = dismantleAddress( address, contEl);
 			trigEl.innerHTML = "Assemble!";
 			dismantled = true;
 		}
@@ -98,7 +103,7 @@
 		}
 	};
 
-	function assembleAddress(piecesArr, contEl)
+	function assembleAddress(piecesArr, contEl, callback)
 	{
 		deleteCSSInsideContentSpans(contEl);
 
@@ -139,6 +144,7 @@
 
 		setTimeout(function() {
 			contEl.innerHTML = "<a href='mailto:" + emailAddress + "?subject=Contact from karelsuchomel.cz'>" + contEl.innerHTML + "</a>";
+			return callback;
 		}, delayMultiplier * 20);
 
 		}, 500);
@@ -148,10 +154,13 @@
 	/**
    * Events/APIs/init
    */
-	triggerControl(emailAddress, containerID, triggerID);
-	document.getElementById(triggerID).addEventListener('click', function() {
+
+  function triggerHandle() {
 		triggerControl(emailAddress, containerID, triggerID);
-	}, false);
+	};
+
+	document.getElementById(triggerID).addEventListener('click', triggerHandle, false);
+	triggerControl(emailAddress, containerID, triggerID);
 
 
 })(window, document);
