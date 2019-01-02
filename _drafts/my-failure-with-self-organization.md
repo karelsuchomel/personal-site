@@ -1,8 +1,18 @@
 ---
-title: Self organization failure
+title: My failure to self organize
 ---
 
-I've decided to write about something I was **never really good at** and that should be enough of a warning for any reader to take these following paragraphs with enough of a distance. 
+To name what is this passionate rant about: Time trackers, task managers like Trello, rest timers, blue-life-calendars, classic todo lists, and other productivity enhancing tips and tricks. Also, I've decided to write about something I was never really good at. This fact should be enough of a warning for any reader to read these following paragraphs with a distance. I only have my personal experience after all.
+
+So what's the problem here? Let me illustrate with the process I went though several times already. Call it *realization-*
+
+Adding some new *revolutionary* practice into my working routine usually goes through several phases. Chronologically they are:
+
+- Excitement and enthusiasm to finally be more productive. The dream of accomplishment is big.
+- Kinda starting to feel the disadvantages
+- Kinda forgetting to use it
+- seeing that the practice only made me feel more "busy"
+
 
 In my life, I've worked with people that take organization super seriously. Tracking their time on each individual project, switching the tracker every time they go for meal, short walk or coffee break. Charting road-maps with deadlines, keeping track of a project on Trello shifting cards left to right and right to left, commenting and assigning cards to others. Why do we do what we do? Don't care, just make sure there are no cards with your name
 (best way to do that is usually to make a comment about someone else's job and assign the card to them).
@@ -28,7 +38,7 @@ Notebook has it's own nice package, and because it's not just a paper, I try har
 
 ? maybe the key is to understand how ideas are found in someones head, how they are nurtured to become better, more useful.  
 
-? It's not you... it's the system! Oh ... don't be so sorry for your self you little cry baby.
+? It's not you... it's the system! Oh ... don't be so sorry for your self you little cry baby. But that is exactly my point, I obviously don't know how to use these tools, or when to use them... so I just use them whenever I feel tey might be useful but they almost never are. The point that I am trying to make is, that todo lists, pomodoro timers and others mentioned are useful only sometimes and that "sometimes" is actually more like almost never. 
 
 ? How at the start of the tutorial he says... making game is a hard thing, before you start learning it, make sure your life, your well being is in good condition.
 
