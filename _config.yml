@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Here I share what my dreams are, and what my heart tells me is important.
 keywords: Karel Suchomel, Font-end, Koder, Web designer, School websites, School tools, Tools for schools
 baseurl: ""
-url: "https://karelsuchomel.cz/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://karelsuchomel.cz" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:title:output_ext
 
 # Build settings
