@@ -1,8 +1,11 @@
 @import "_partials"
 
+body
+	background-color: #f9f9f9
+
 #page-wrapper
 	padding-bottom: 12px
-	max-width: 860px
+	max-width: 1180px
 	margin: 0 auto
 	min-height: 100vh
 	box-sizing: border-box
@@ -11,9 +14,15 @@
 	padding: 0px 12px
 
 h1, h2, h3, h4, h5, h6
-	font-family: 'Bitter', serif
+	font-family: 'Roboto', serif
 	margin: 24px 0px 6px
 	line-height: 1.2em
+
+h1
+	color: #2d3436
+	font-size: 64px
+	margin: 32px 0 32px
+
 h2
 	display: inline-block
 
@@ -27,11 +36,11 @@ hr
 	border: 0px
 	clear: both
 
-p
+.post-list > p, ul, ol
 	font-family: 'Roboto', sans-serif
 	font-size: 16px
 	line-height: 24px
-	margin: 0px 0px 12px
+	margin: 32px 0px
 
 	a
 		@extend .standard-link

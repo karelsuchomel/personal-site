@@ -1,18 +1,22 @@
 ---
-title: My failure to self organize
+title: Me failing at self-organization
 ---
 
-To name what is this passionate rant about: Time trackers, task managers like Trello, rest timers, blue-life-calendars, classic todo lists, and other productivity enhancing tips and tricks. Also, I've decided to write about something I was never really good at. This fact should be enough of a warning for any reader to read these following paragraphs with a distance. I only have my personal experience after all.
+<p class="annotation">
+	To pinpoint what is the subject of this observation more accurately, I am arguing against usefulness of time trackers, task managers (like Trello), rest timers, blue-life-calendars, classic todo-list apps, and other productivity enhancing tips and tricks you can think of. Also, disclaimer! I am writing about something I was never really good at. This fact should serve as a recommendation for you to continue reading these paragraphs with a bit of a distance. I only have my personal experience after all.
+</p>
 
-So what's the problem here? Let me illustrate with the process I went though several times already. Call it *realization-*
-
-Adding some new *revolutionary* practice into my working routine usually goes through several phases. Chronologically they are:
+So what's the problem here? Let me introduce you to the dreadful process I went though several times already. Call it *realizing-nothing-will-save-me* ... process. When adding some new *revolutionary* practice into my working routine, it usually goes through several phases. Chronologically they would be:
 
 - Excitement and enthusiasm to finally be more productive. The dream of accomplishment is big.
-- Kinda starting to feel the disadvantages
-- Kinda forgetting to use it
-- seeing that the practice only made me feel more "busy"
+- Kinda starting to feel the disadvantages. The dream fades away.
+- Kinda forgetting to use it. It is becoming a nuisance.
+- seeing that the practice only made me feel more "busy", but I just wasted more time than I have gotten back.
 
+## citing wikipedia
+<p class="citation">
+	is a process where some form of overall order arises from local interactions between parts of an initially disordered system. The process is spontaneous, not needing control by any external agent
+</p>
 
 In my life, I've worked with people that take organization super seriously. Tracking their time on each individual project, switching the tracker every time they go for meal, short walk or coffee break. Charting road-maps with deadlines, keeping track of a project on Trello shifting cards left to right and right to left, commenting and assigning cards to others. Why do we do what we do? Don't care, just make sure there are no cards with your name
 (best way to do that is usually to make a comment about someone else's job and assign the card to them).
@@ -24,7 +28,6 @@ It has always been a struggle for me to recognize where different types of ideas
 This has a obvious solution. Just use one place dammit! But which one? Trello boards are so easy to share with others... and collaborate, or at least create the false sense of collaboration and "work being done".
 Papers are easiest to create, discard and rearrange, but arguably the worts to present. They are not as concise as Trello cards often changing style of presentation from page to another. 
 Notebook has it's own nice package, and because it's not just a paper, I try harder to make the entry more beautiful, with colors and stuff. There is greater sense of permanence. You cannot easily rearrange it (add additional page between two already filled pages, for example).
-
 
 
 

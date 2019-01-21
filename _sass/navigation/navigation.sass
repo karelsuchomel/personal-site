@@ -1,116 +1,68 @@
 @import '../_partials'
 
-.link-background-reaction
-	&:hover, &:focus
-		background: #e3e2e1
-
-	&:active
-		background: #d3d2d1
+#nav-background
+	background-color: #f9f9f9
 
 #main-navigation
-	position: relative
-	padding: 0px 12px
-	&:after
-		content: ""
-		display: block
-		clear: both
+	display: flex
+	justify-content: space-between
+	max-width: 1180px
+	margin: 0 auto
+	box-sizing: border-box
+	padding: 0 34px
 
 	.front-page-link
 		display: block
 		float: left
-		border-bottom: 3px solid black
-		padding: 8px 0px 2px
-		// font
-		font-family: 'Bitter', serif
-		font-size: 16px
-		font-weight: 700
-		text-decoration: none
-		color: black
+		padding: 8px 0
+		> img
+			display: block
+			width: 250px
+			height: 48px
 
-		> span
+	.navigation-links-container
+		display: flex
+		@extend .clear-float
+		overflow-y: hidden
+
+		.navigation-link
+			@extend .noselect
 			display: block
 			float: left
+			flex-shrink: 0
+			font-size: 14px
+			padding: 24px 20px
+			margin-left: 6px
+			font-weight: 500
+			background: transparent
+			text-decoration: none
+			color: #999
+			transition: background 0.2s, color 0.2s
 
-		&:hover, &:active
-			> span.hidden
-				max-width: 100px
-
-		> span.hidden
-			transition: max-width 0.3s
-			transition-delay: 1s
-			overflow: hidden
-			max-width: 0px
-
-
-	.navigation-link
-		display: block
-		float: right
-		font-size: 14px
-		padding: 10px 8px
-		margin-left: 6px
-		font-weight: 500
-		background: transparent
-		text-decoration: none
-		color: black
-		@extend .link-background-reaction
-		@extend .noselect
-
-	label.mobile-navigation-toggle
-		cursor: pointer
-		@extend .navigation-link
-
-	input#mobile-navigation-trigger
-		display: none
-
-		&:checked + #navigation-content-wrapper
-			display: block
-
-	#navigation-content-wrapper
-		display: none
-		position: absolute
-		top: 43px
-		right: 12px
-
-		ul
-			position: relative
-			z-index: 11
-			padding: 12px 0px
-			margin: 0px
-			list-style: none
-			background-color: white
-			animation: slideUpFromInvisible 0.25s
-
-			// The menu "bubble tip"
-			&:before
-				content: ""
-				display: block
-				position: absolute
-				top: -5px
-				right: 23px
-				width: 10px
-				height: 10px
+			&:hover, &:focus, &:active
 				background: white
-				transform: rotate(45deg)
+				color: #444
 
-			li
-				margin: 0px
-				a
-					display: block
-					text-decoration: none
-					color: black
-					font-size: 14px
-					font-weight: 500
-					padding: 8px 72px 8px 12px
-					margin-bottom: 4px
-					background-color: white
-					@extend .link-background-reaction
+@media screen and(max-width: 640px)
+	#main-navigation
+		padding: 0 16px
 
-		.navigation-background-toggle
-			position: fixed
-			z-index: 10
-			top: 36px
-			left: 0
-			bottom: 0
-			right: 0
-			background: rgba(0,0,0,0.33)
-			animation: justAppearFromThinAir 0.2s
+		.front-page-link
+			padding: 17px 0
+			> img
+				width: 180px
+				height: 30px
+
+@media screen and(max-width: 440px)
+	#main-navigation
+		padding: 0
+		flex-wrap: wrap
+		justify-content: flex-start
+
+		.front-page-link
+			padding: 12px 16px
+
+		.navigation-links-container
+			.navigation-link
+				margin-left: 0px
+				padding: 12px 16px
