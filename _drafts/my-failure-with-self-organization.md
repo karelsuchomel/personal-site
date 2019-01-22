@@ -1,10 +1,13 @@
 ---
 title: Me failing at self-organization
+excerpt_separator: <!--more-->
 ---
 
 <p class="annotation">
 	To pinpoint what is the subject of this observation more accurately, I am arguing against usefulness of time trackers, task managers (like Trello), rest timers, blue-life-calendars, classic todo-list apps, and other productivity enhancing tips and tricks you can think of. Also, disclaimer! I am writing about something I was never really good at. This fact should serve as a recommendation for you to continue reading these paragraphs with a bit of a distance. I only have my personal experience after all.
 </p>
+
+<!--more-->
 
 So what's the problem here? Let me introduce you to the dreadful process I went though several times already. Call it *realizing-nothing-will-save-me* ... process. When adding some new *revolutionary* practice into my working routine, it usually goes through several phases. Chronologically they would be:
 

@@ -1,4 +1,4 @@
 ---
-title: about me
+title: writings
 layout: front-page
 ---

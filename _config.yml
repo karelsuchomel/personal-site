@@ -1,16 +1,15 @@
-title: Karel Suchomel - personal site
+title: K. S.
 author: Karel Suchomel
 email: karelsuchomel@windowslive.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Here I share what my dreams are, and what my heart tells me is important.
-keywords: Karel Suchomel, Font-end, Koder, Web designer, School websites, School tools, Tools for schools
-baseurl: ""
-url: "https://karelsuchomel.cz" # the base hostname & protocol for your site, e.g. http://example.com
+  It's like we went for a beer together and I was only one talking and there was no beer.
+keywords: Karel Suchomel, Krysa, has still not figured it out, likes DISCO minus Michal David
+url: "http://karelsuchomel.cz" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:title:output_ext
+theme:
 
 # Build settings
 markdown: kramdown
-plugins:
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -19,7 +18,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .sass-cache
-# - vendor/bundle/
-# - vendor/cache/
-# - vendor/gems/
-# - vendor/ruby/

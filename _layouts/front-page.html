@@ -1,51 +1,30 @@
 {% include head.html %}
 
 <div class="content-wrapper">
-<!-- front card -->
-<div class="front-card-container">
-	<!-- list projects i've done -->
+
+<div id="listing-writings-container">
 	{%- if site.posts.size > 0 -%}
-		<ul class="post-list">
+		<ul class="listing">
 			{%- for post in site.posts -%}
 			<li>
-				<!-- <span class="post-meta">{{ post.date | date: date_format }}</span> -->
 				<h2>
 					<a class="post-link" href="{{ post.url | relative_url }}">
 						{{ post.title | escape }}
 					</a>
 				</h2>
+				<span class="post-meta">
+					{{ post.date | date_to_long_string }}
+				</span>
+				<p>
+					{{ post.excerpt }}
+				</p>
 			</li>
 			{%- endfor -%}
 		</ul>
 	{%- else -%}
-		<h2 class="post-list-heading">No posts here</h2>
+		<h2>No posts here, try looking in the _posts/ and the _drafts/ directories to see if there is something. </h2>
 	{%- endif -%}
 </div>
-
-<hr>
-
-
-{%- if site.categories.projects.size > 0 -%}
-	<h2>Projects I've done</h2>
-	<p class="listing-projects-paragraph">
-		All are live... check them out. <a href="{{ "/category/projects.html" | relative_url }}">Show all...</a>
-	</p>
-	<ul class="front-page-list-projects">
-		{%- for post in site.categories.projects limit:3 -%}
-		<a class="post-link" href="{{ post.url | relative_url }}">
-		<li>
-			<div class="graphic-container">
-				<img src="{{ post.thumbnail | relative_url }}" alt="desktop-screenshot">
-			</div>
-			<h3>
-					{{ post.title | escape }}
-			</h3>
-		</li>
-		</a>
-		{%- endfor -%}
-	</ul>
-<hr>
-{%- endif -%}
 
 </div>
 
