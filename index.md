@@ -1,4 +1,4 @@
 ---
-title: writings
+title: Writings
 layout: front-page
 ---
