@@ -3,16 +3,12 @@ title: Me failing at self-organization
 excerpt_separator: <!--more-->
 ---
 
-Picture this revolutionary, new project management tool. It's nothing like you have used before. It has all those features your hearth desired. You always know where to look for which information and all the practices that comes with using it, are everyones second nature. It's like an invisible fabric that copies the contours of your team's inner workings so well, you just want to snuggle with it after work. 
+Picture this revolutionary, new project management tool. It's nothing like you have used before. It has all those features your hearth desired. You always know where to look for which information and all the practices that comes with using it, are everyones second nature. It's like an invisible fabric that copies the contours of your team's inner workings so well, you just want to snuggle with it after work.
+<!--more-->
 
 Now stop imagining it, I have a heartfelt confession for you. In the real world, I have experienced mostly irritation and disappointment working with systems that were supposedly improving my productivity.
 
 I feel that dreaming about such solutions to our difficulties is backwards and that it turns away from how we humans really function.
-
-
-
-
-<!--more-->
 
 
 
