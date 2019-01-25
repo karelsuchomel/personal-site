@@ -1,0 +1,111 @@
+@import "_partials"
+
+#curriculum-vitae-wrapper
+	h1
+		margin: 96px 0 48px
+
+		text-align: center
+		font-size: 32px
+		font-weight: 700
+		color: #222F3E
+
+	h2
+		margin: 48px 0 24px
+
+		text-align: center
+		font-size: 16px
+		font-weight: 400
+		color: #656565
+
+	h3
+		font-size: 16px
+		font-weight: 400
+		color: #222F3E
+		line-height: 24px
+		> a
+			text-decoration: none
+			color: #154E90
+
+			&:hover, &:active, &focus
+				color: #316FB8
+
+	.project-container
+		> a 
+			display: block
+			> img
+				display: block
+				width: 100%
+				height: auto
+				transition: filter 0.2s
+
+				&:hover, &:active, &:focus
+					filter: opacity(0.8)
+
+	.current-projects-row
+		@extend .clear-float
+
+		.project-container
+			float: left
+			width: calc((100% - 42px) / 3)
+
+			&:nth-of-type(2)
+				margin: 0 21px
+
+
+	.projects-column
+		.project-container
+			@extend .clear-float
+			max-width: 450px
+			margin: 0 auto
+			padding: 15px 15px
+			border-bottom: 1px solid #DDD
+
+			h3
+				margin-top: 7px
+				float: left
+				width: 75%
+				box-sizing: border-box
+				padding-left: 20px
+
+			> a
+				float: left
+				width: 25%
+				box-sizing: border-box
+				> img
+					width: 100%
+
+@media screen and(max-width: 640px)
+	#curriculum-vitae-wrapper
+		h1
+			margin: 48px 0 20px
+		h2
+			margin: 20px 0 24px
+
+		.current-projects-row
+			max-width: 450px
+			margin-right: auto 
+			margin-left: auto 
+			.project-container
+				float: none
+				width: 100%
+				margin: 34px 0 
+
+				&:nth-of-type(2)
+					margin: 34px 0
+
+		.projects-column
+			.project-container
+				padding: 15px 0
+
+				h3
+					margin-top: 0px
+					width: 80%
+					padding-left: 15px
+
+				> a
+					float: left
+					width: 20%
+					box-sizing: border-box
+					> img
+						width: 100%
+						border-radius: 50%

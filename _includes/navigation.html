@@ -6,9 +6,33 @@
 			Suchomel
 		</a>
 		<div class="navigation-links-container">
-			<a href="{{ '/' | absolute_url }}" class="navigation-link">Writings</a>
-			<a href="{{ "/category/projects.html" | relative_url }}" class="navigation-link">Curriculum vitae</a>
-			<a href="#" class="navigation-link">Contact me</a>
+			<a 
+				href="{{ '/' | absolute_url }}" 
+				class="
+					navigation-link
+					{% if '/' == page.url %} active{% endif %}
+					"
+			>
+				Writings
+			</a>
+			<a 
+				href="{{ 'cv.html' | absolute_url }}" 
+				class="
+					navigation-link
+					{% if '/cv.html' == page.url %} active{% endif %}
+					"
+			>
+				Curriculum vitae
+			</a>
+			<a 
+				href="{{ 'contact.html' | absolute_url }}" 
+				class="
+					navigation-link
+					{% if '/contact.html' == page.url %} active{% endif %}
+					"
+			>
+				Contact me
+			</a>
 		</div>
 	</nav>
 </div>

@@ -12,6 +12,7 @@
 	padding: 0 34px
 
 	.front-page-link
+		@extend .noselect
 		display: block
 		float: left
 		flex-shrink: 0
@@ -55,12 +56,13 @@
 				background: white
 				color: #444
 
+		.navigation-link.active
+			color: #444
+
+
 @media screen and(max-width: 640px)
 	#main-navigation
 		padding: 0 20px
-
-		.front-page-link
-			> img
 
 @media screen and(max-width: 440px)
 	#main-navigation
