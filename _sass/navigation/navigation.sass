@@ -17,17 +17,18 @@
 		float: left
 		flex-shrink: 0
 
-		color: #444
-		font-size: 14px
-		line-height: 64px
-		font-weight: 700
-		text-decoration: none
-		text-transform: uppercase
-		> img
-			margin-bottom: - 7px 
-			display: inline
-			width: 24px
-			height: 24px
+		> svg
+			padding: 20px 0 19px
+			display: block
+			width: 198px
+			height: 25px
+
+		#title-graphic
+			fill: #aaa
+
+		&:hover, &:active, &:focus
+			#title-graphic
+				fill: #284271
 
 	.navigation-links-container
 		display: flex
@@ -62,10 +63,6 @@
 
 @media screen and(max-width: 640px)
 	#main-navigation
-		padding: 0 20px
-
-@media screen and(max-width: 440px)
-	#main-navigation
 		padding: 0
 		flex-wrap: wrap
 		justify-content: flex-start
@@ -75,8 +72,17 @@
 			line-height: 48px
 
 		.navigation-links-container
-			margin-left: 10px
+			width: 100%
+			box-sizing: border-box
+
 			.navigation-link
 				line-height: 48px
 				margin-left: 0px
+				padding: 0px 20px
+
+@media screen and(max-width: 400px)
+	#main-navigation 
+		.navigation-links-container
+			padding-left: 10px
+			.navigation-link
 				padding: 0px 10px

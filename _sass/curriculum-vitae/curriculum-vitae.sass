@@ -1,16 +1,18 @@
 @import "_partials"
 
 #curriculum-vitae-wrapper
+	@extend .clear-float
+	
 	h1
-		margin: 96px 0 48px
+		margin: 84px 0 34px
 
 		text-align: center
-		font-size: 32px
+		font-size: 42px
 		font-weight: 700
-		color: #222F3E
+		color: #154E90
 
 	h2
-		margin: 48px 0 24px
+		margin: 34px 0 24px
 
 		text-align: center
 		font-size: 16px
@@ -53,11 +55,38 @@
 
 
 	.projects-column
+		float: left
+		max-width: 456px
+		box-sizing: border-box
+		h2
+			font-weight: 700
+
+	.projects-column.first
+		padding-right: 25px
+
+		.section-wrapper
+			padding: 15px 0
+
+			.item-container
+				h3
+					position: relative
+					margin-top: 7px
+					padding-left: 95px
+
+					.time-span
+						color: #656565
+						position: absolute
+						top: 50%
+						left: 0
+						transform: translateY(-50%)
+
+
+	.projects-column.second
+		padding-left: 25px
+
 		.project-container
 			@extend .clear-float
-			max-width: 450px
-			margin: 0 auto
-			padding: 15px 15px
+			padding: 15px 0
 			border-bottom: 1px solid #DDD
 
 			h3
@@ -74,15 +103,20 @@
 				> img
 					width: 100%
 
+@media screen and(max-width: 980px)
+	#curriculum-vitae-wrapper
+		.projects-column
+			float: none
+			margin: 0 auto
+		.projects-column.first, .projects-column.second
+			padding: 0
+
 @media screen and(max-width: 640px)
 	#curriculum-vitae-wrapper
 		h1
 			margin: 48px 0 20px
 		h2
 			margin: 20px 0 24px
-
-			&:nth-of-type(2)
-				margin: 54px 0 7px
 
 		.current-projects-row
 			max-width: 450px
