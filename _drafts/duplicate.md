@@ -6,21 +6,22 @@ To pinpoint what is the subject of this observation more accurately, I am arguin
 
 
 
-So what's the problem here? Let me introduce you to the dreadful process I went though several times already. Call it *realizing-nothing-will-save-me* ... process. When adding some new *revolutionary* practice into my working routine, it usually goes through several phases. Chronologically they would be:
-
-- Excitement and enthusiasm to finally be more productive. The dream of accomplishment is big.
-- Kinda starting to feel the disadvantages. The dream fades away.
-- Kinda forgetting to use it. It is becoming a nuisance.
-- seeing that the practice only made me feel more "busy", but I just wasted more time than I have gotten back.
+So what's the problem here? Let me introduce you to the dreadful process I went though several times already. Call it *realizing-nothing-will-save-me* ... process.
 
 
+You certainly experienced that feeling of hopelessness, when you have an idea, that you want to preserve for later or share it with the team, but there is no obvious place to put it in. Upload it to Google Drive? Draw it on paper? Create card in Trello under "ideas" column?
+If you feel like this from time to time, you could have come to conclusion that some sort of system could solve your indecisiveness. If there only were a standardized way of doing things, I wouldn't have to think about it. There is no standard for creative process that would accommodate all of the different varieties of our creative processes.
 
-Usually including some new revolutionary practice inside my working routine goes through several stages. Chronologically they are
+Someone just love to sketch ideas in their notebook... plotting their next designs in peace and quiet. Some like to be more vocal at that. Some like the first opinion only of a selected few.
+My take is, don't mess with other peoples creative processes.
 
-- Excitement and enthusiasm to finally be more productive
-- Kinda starting to feel the disadvantages
-- Kinda forgetting to use the practice
-- seeing that the practice only made me feel more "busy"
+# Return of investment
+Critical point to my argument is that, the tax you pay for integrating many of these tools or behaviors in one's working hours, is many times higher than the return you get back.
+
+To support this claim, I point to the book of Maverick! by Ricardo Semler. It's a story about evolving company rules as young Semler tries to transform the working environment of workers which dislike their managers to a space that is more dignifying for every one.
+He evaluates many of the older industry standard way of running a company and asks *why* three times in a row. If the rules doesn't hold up, it probably doesn't do nay good.
+Most of the rules removed this way, were in place to create tighter control over workers. To dictate to them, like to little kids, how to do almost everything.
+
 
 
 

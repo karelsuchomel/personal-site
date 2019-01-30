@@ -17,7 +17,7 @@
 					text-decoration: none
 					transition: color 0.2s
 					&:hover, &:active, &:focus
-						color: #4B5E74
+						color: #316FB8
 
 			span
 				color: #999
@@ -26,6 +26,29 @@
 				font-size: 22px
 				line-height: 40px
 				color: #555
+				margin-bottom: 12px
+
+			.read-more-link
+				font-size: 16px
+				font-weight: 700
+				line-height: 18px
+				color: #284271
+				text-decoration: none
+				transition: color 0.2s
+
+				> svg
+					height: 10px
+					width: 14px
+					margin-left: 5px
+
+				.arrow-icon
+					fill: #284271
+					transition: fill 0.2s
+
+				&:hover, &:active, &:focus
+					color: #316FB8
+					.arrow-icon
+						fill: #316FB8
 
 @media screen and(max-width: 640px)
 	#listing-writings-container
