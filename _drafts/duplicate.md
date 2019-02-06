@@ -6,22 +6,28 @@ To pinpoint what is the subject of this observation more accurately, I am arguin
 
 
 
+
 So what's the problem here? Let me introduce you to the dreadful process I went though several times already. Call it *realizing-nothing-will-save-me* ... process.
 
 
-You certainly experienced that feeling of hopelessness, when you have an idea, that you want to preserve for later or share it with the team, but there is no obvious place to put it in. Upload it to Google Drive? Draw it on paper? Create card in Trello under "ideas" column?
-If you feel like this from time to time, you could have come to conclusion that some sort of system could solve your indecisiveness. If there only were a standardized way of doing things, I wouldn't have to think about it. There is no standard for creative process that would accommodate all of the different varieties of our creative processes.
 
-Someone just love to sketch ideas in their notebook... plotting their next designs in peace and quiet. Some like to be more vocal at that. Some like the first opinion only of a selected few.
-My take is, don't mess with other peoples creative processes.
+Picture this revolutionary, new project management tool. It's nothing like you have used before. It has all those features your hearth desired. You always know where to look for which information and all the practices that comes with using it, are everyones second nature. It's like an invisible fabric that copies the contours of your team's inner workings so well, you just want to snuggle with it after work.
 
-# Return of investment
-Critical point to my argument is that, the tax you pay for integrating many of these tools or behaviors in one's working hours, is many times higher than the return you get back.
+Now stop imagining it, I have a heartfelt confession for you. In the real world, I have experienced mostly irritation and disappointment working with systems that were supposedly improving my productivity.
 
-To support this claim, I point to the book of Maverick! by Ricardo Semler. It's a story about evolving company rules as young Semler tries to transform the working environment of workers which dislike their managers to a space that is more dignifying for every one.
-He evaluates many of the older industry standard way of running a company and asks *why* three times in a row. If the rules doesn't hold up, it probably doesn't do nay good.
-Most of the rules removed this way, were in place to create tighter control over workers. To dictate to them, like to little kids, how to do almost everything.
+I feel that dreaming about such solutions to our difficulties is backwards and that it turns away from how we humans really function.
 
+
+
+I won't argue againt road maps or writing things down... this all is part of figuring things out. How long will the feature take to build, what is necessary for minimal viable product deployment. Writing things down, show you what you really think... because you don't really know up until you put it down. You might have a feeling about general direction, but probably lack a comprehensive view of the thing you doing. Many times, we are focusing on the task at hand, day or two into the future.
+
+When it's a figuring things out, why not use some tips on where to start, what questions to answer. They are tho, less of a systems and more of a template that can *inspire* you. Inspire being the important part... not control you.
+
+So there is this hunch of mine, that systems that we deploy in our workplace, we deploy to help us solve issues that the tools cannot help us with, or weren't even designed to.
+
+
+
+So I am proposing a distinction in tools and practices we use as a general rules, and those that control us in faith that it will make us more productive.
 
 
 
