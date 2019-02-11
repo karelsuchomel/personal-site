@@ -1,0 +1,86 @@
+#contact-me-wrapper
+	h1
+		margin: 84px 0 34px
+
+		text-align: center
+		font-size: 42px
+		font-weight: 700
+		color: #284271
+
+	svg
+		display: block
+		margin: 17px 0
+
+	form
+		display: block
+		max-width: 500px
+		margin: 34px auto
+
+		.field
+			display: block
+			width: 100%
+			box-sizing: border-box
+			padding: 10px 12px
+			margin: 0 0 17px
+
+			border-radius: 0 5px 5px 5px
+			border: 3px solid #DDD
+			transition: border 0.3s
+
+			&:focus
+				border: 3px solid #8AB2E2
+
+		label
+			display: inline-block
+			padding: 0 12px
+			margin: 17px 0 0
+			border-radius: 5px 5px 0 0
+			background-color: #DDD
+
+			font-size: 14px
+			line-height: 22px
+			color: #222F3E
+
+		select
+			@extend .field
+
+		textarea
+			@extend .field
+			height: 120px
+
+		input
+			@extend .field
+
+		input[type="submit"]
+			max-width: 200px
+			margin: 34px 0
+			margin-left: auto
+			margin-right: auto
+			transition: background-color 0.3s
+			border-radius: 24px
+			border: 0
+			background-color: #999
+			cursor: pointer
+
+			font-size: 18px
+			line-height: 28px
+			color: white
+
+			&:hover, &:active
+				background-color: #073870
+
+			&:focus
+				box-shadow: 0
+
+	form span
+		margin: 64px 0 34px
+
+		font-size: 16px
+		font-weight: 400
+		color: #222F3E
+		line-height: 24px
+
+		> a
+			text-decoration: none
+			color: #154E90
+
