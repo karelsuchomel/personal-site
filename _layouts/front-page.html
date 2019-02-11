@@ -18,7 +18,7 @@
 				{{ post.excerpt }}
 				<a class="read-more-link" href="{{ post.url | relative_url }}">
 					Read more
-					{% include arrow-icon.svg %}
+					<img src="{{ 'assets/images/arrow-icon.svg' | absolute_url }}" alt="arrow to the right"/>
 				</a>
 			</li>
 			{%- endfor -%}

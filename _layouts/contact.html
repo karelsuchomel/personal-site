@@ -1,7 +1,34 @@
 {% include head.html %}
 
 <div class="content-wrapper" id="contact-me-wrapper">
-	<h1>Contact me</h1>
+	<h1>Form</h1>
+
+	<form action="https://formspree.io/karelsuchomel@windowslive.com" method="POST">
+		<label for="subject-selection">Subject line</label>
+		<select id="subject-selection" name="_subject">
+			<option value="form (karelsuchomel.cz) - uncathegorized" selected></option>
+			<option value="form (karelsuchomel.cz) - related to schools">Related to schools (software, education)</option>
+			<option value="form (karelsuchomel.cz) - job offer">Job offer</option>
+			<option value="form (karelsuchomel.cz) - just saying hi">Just saying hi</option>
+			<option value="form (karelsuchomel.cz) - book recommendation">Book recommendation</option>
+		</select>
+
+		<label for="message-content">Message (don't forgot the name)</label>
+		<textarea id="message-content" type="text" name="message" required></textarea>
+
+		<label for="sender-email">E-mail</label>
+		<input type="email" name="_replyto" required>
+
+		<input type="submit" value="Send">
+
+		<hr />
+
+		<span>Or if you prefer, e-mail, phone, the usual...
+			<a href="mailto:&#107;&#097;&#114;&#101;&#108;&#115;&#117;&#099;&#104;&#111;&#109;&#101;&#108;&#064;&#119;&#105;&#110;&#100;&#111;&#119;&#115;&#108;&#105;&#118;&#101;&#046;&#099;&#111;&#109;">&#107;&#097;&#114;&#101;&#108;&#115;&#117;&#099;&#104;&#111;&#109;&#101;&#108;&#064;&#119;&#105;&#110;&#100;&#111;&#119;&#115;&#108;&#105;&#118;&#101;&#046;&#099;&#111;&#109;</a> | +&#052;&#050;&#048;&#032;&#055;&#055;&#051;&#032;&#050;&#055;&#053;&#032;&#050;&#056;&#052;
+		</span>
+	</form> 
+	
+
 </div>
 
 {% include footer.html %}
