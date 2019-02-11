@@ -11,7 +11,8 @@
 		font-weight: 700
 		color: #284271
 
-	h2
+	> span
+		display: block
 		margin: 34px 0 24px
 
 		text-align: center
@@ -60,6 +61,12 @@
 		box-sizing: border-box
 		h2
 			font-weight: 700
+			margin: 34px 0 24px
+
+			text-align: center
+			font-size: 16px
+			color: #656565
+
 
 	.projects-column.first
 		padding-right: 25px
@@ -118,9 +125,15 @@
 @media screen and(max-width: 640px)
 	#curriculum-vitae-wrapper
 		h1
-			margin: 48px 0 20px
-		h2
-			margin: 20px 0 24px
+			margin: 34px 0 12px
+			font-size: 26px
+
+		> span
+			margin: 12px 0 12px
+
+		.projects-column
+			h2
+				margin: 54px 0 0px
 
 		.current-projects-row
 			max-width: 450px
