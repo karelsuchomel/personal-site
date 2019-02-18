@@ -1,4 +1,4 @@
 ---
 title: Writings
-layout: cv
+layout: list-writings
 ---
