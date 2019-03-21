@@ -1,13 +1,19 @@
 ---
-title: Me failing at self-organization
+title: Failing at self-organization
 excerpt_separator: <!--more-->
 ---
 
-You have certainly experienced that feeling of hopelessness, when you have an idea, that you want to preserve for later or share it with a colleague, but there is no obvious place to put it in.<!--more--> Upload it to Google Drive? Draw it on paper? In a notebook? Create card in Trello under "ideas" column?
+So I'll first admit here that I did failed myself. I did it by not overcoming obstacles I could have overcome. By giving up, when I should have fought. 
+
+<!--more-->
+
+You have certainly experienced that feeling of hopelessness, when you have an idea, that you want to preserve for later or share it with a colleague, but there is no obvious place to put it in. Upload it to Google Drive? Draw it on paper? In a notebook? Create card in Trello under "ideas" column?
 If you feel like this from time to time, you could have come to conclusion that some sort of system could solve your indecisiveness. If there only were a standardized way of doing things, I wouldn't have to think about it. There is no standard for creative process that would accommodate all of the different varieties of our creative processes.
 
 Someone just love to sketch ideas in their notebook... plotting their next designs in peace and quiet. Some like to be more vocal at that. Some like the first opinion only of a selected few.
 My take is, don't mess with other peoples creative processes.
+
+# Detesting all the SCRUMS and other abbreviations which stands for something
 
 # Return of investment
 Critical point to my argument is that, the tax you pay for integrating many of these tools or behaviors in one's working hours, is many times higher than the return you get back.

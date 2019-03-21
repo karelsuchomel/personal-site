@@ -1,4 +1,4 @@
 ---
-title: Writings
+title: Curriculum Vitae
 layout: cv
 ---
