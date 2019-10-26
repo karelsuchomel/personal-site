@@ -1,18 +1,19 @@
-@import '../_partials'
+//
+// Navigation
+//
 
 #nav-background
-	background-color: #f9f9f9
 
 #main-navigation
 	display: flex
 	justify-content: space-between
-	max-width: 980px
+	max-width: $max-content-width
 	margin: 0 auto
 	box-sizing: border-box
 	padding: 0 34px
 
 	.front-page-link
-		@extend .noselect
+		@extend %noselect
 		display: block
 		float: left
 		flex-shrink: 0
@@ -33,11 +34,11 @@
 
 	.navigation-links-container
 		display: flex
-		@extend .clear-float
+		@extend %clear-float
 		overflow-y: hidden
 
 		.navigation-link
-			@extend .noselect
+			@extend %noselect
 			display: block
 			float: left
 			flex-shrink: 0
